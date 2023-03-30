@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/user" element={<User />} />
-          <Route path="/adm" element={<Adm />} />
+          <Route path="user" element={<User />} />
+          <Route path="adm" element={<Adm />} />
         </Routes>
     </Router>
   </React.StrictMode>,
