@@ -3,16 +3,25 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import User from "./pages/User";
 import Adm from "./pages/Adm";
-import {BrowserRouter as Router, Routes, Route,Link} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path:"user",
+    element:<User/>,
+  },
+  {
+    path:"adm",
+    element:<Adm/>
+  },
+]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Router>
-            <Routes>
-                <Route path='/' element={<App/>}/>
-                <Route path='/user' element={<User/>}/>
-                <Route path='/adm' element={<Adm/>}/>
-                
-            </Routes>
-        </Router>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
