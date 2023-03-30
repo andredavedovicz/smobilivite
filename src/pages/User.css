@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+    
+  }
+  .App1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    flex-direction: column;
+    
+  }
+
+.central{
+    height: 9%;
+    width: 100%;
+    background-color: #A1A2A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .line{
+    height: 13%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .icons{
+    height: 100%;
+    width: 25%;
+    background-color: #585859;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #252526;
+  }
+  .category{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #252526;
+    margin-bottom: 150px;
+  }
+  .line button{
+    background-color: #4C4D54;
+  }
+  .whatis{
+    width: 25%;
+    height: 100%;
+  }
+  .urgency{
+    width: 37.5%;
+    height: 100%;
+  }
