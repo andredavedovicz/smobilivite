@@ -58,7 +58,7 @@ function User() {
           <BsFillHouseFill size="5rem" />
         </div>
         <ButtonSelector style="border-color:#4C4D54" options={optionLocations}>
-          Usuário
+          Local
         </ButtonSelector>
       </div>
       <div className="lineUser">
