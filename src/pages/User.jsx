@@ -35,10 +35,10 @@ function User() {
         <div className="icons">
           <HiChatBubbleLeftRight size="5rem" />
         </div>
-        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
-          Descrição da Manutenção
+        <Button variant="contained" component="label" className="category" sx={{textTransform: 'none',background:'#4C4D54'}}>
+        Descrição da Manutenção
+        <input hidden accept="audio/*" multiple type="file" />
         </Button>
-        
       </div>
       <div className="lineUser">
         <div className="icons">
