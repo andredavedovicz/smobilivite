@@ -25,20 +25,21 @@ function User() {
       </div>
       <div className="lineAdm">
         <div className="icons">
-         <TbCalendarStats size="5rem" />
-        </div>
-        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
-          OS002
-        </Button>
-      </div>
-      <div className="lineAdm">
-        <div className="icons">
           <BsFillPersonFill size="5rem" />
         </div>
         <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
           Aldo Maia
         </Button>
       </div>
+      <div className="lineAdm">
+        <div className="icons">
+         <TbCalendarStats size="5rem" />
+        </div>
+        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
+          OS002
+        </Button>
+      </div>
+      
       <div className="lineAdm">
         <div className="icons">
           <HiChatBubbleLeftRight size="5rem" />

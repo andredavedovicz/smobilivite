@@ -27,7 +27,7 @@ function User() {
     "Elevador",
     "Recepção",
     "Sala dos Professores",
-    "Lavanderia"
+    "Lavanderia",
   ];
   return (
     <div className="App1">
@@ -36,15 +36,30 @@ function User() {
         <div className="icons">
           <BsFillPersonFill size="5rem" />
         </div>
-        
-      <ButtonSelector style="border-color:#4C4D54" options={optionUser}>Usuário</ButtonSelector>
-        
+
+        <ButtonSelector style="border-color:#4C4D54" options={optionUser}>
+          Usuário
+        </ButtonSelector>
+      </div>
+      <div className="lineUser">
+        <div className="icons">
+          <TbCalendarStats size="5rem" />
+        </div>
+        <Button
+          variant="contained"
+          className="category"
+          sx={{ textTransform: "none" }}
+        >
+          Minhas OS's
+        </Button>
       </div>
       <div className="lineUser">
         <div className="icons">
           <BsFillHouseFill size="5rem" />
         </div>
-        <ButtonSelector style="border-color:#4C4D54" options={optionLocations}>Usuário</ButtonSelector>
+        <ButtonSelector style="border-color:#4C4D54" options={optionLocations}>
+          Usuário
+        </ButtonSelector>
       </div>
       <div className="lineUser">
         <div className="icons">
@@ -118,18 +133,6 @@ function User() {
           sx={{ textTransform: "none" }}
         >
           Paralisada
-        </Button>
-      </div>
-      <div className="lineUser">
-        <div className="icons">
-          <TbCalendarStats size="5rem" />
-        </div>
-        <Button
-          variant="contained"
-          className="category"
-          sx={{ textTransform: "none" }}
-        >
-          Minhas OS's
         </Button>
       </div>
     </div>
