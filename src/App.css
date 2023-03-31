@@ -31,16 +31,19 @@
   margin-bottom: 150px;
   background-color: #4C4D54;
 }
-.container p{
+.login{
   margin-top: 20px;
   margin-bottom: 50px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 400;
 }
-.container .form{
+.container{
   display: flex;
   align-items: center;
   justify-items: center;
   flex-direction: column;
 
+}
+.sistema{
+  font-size: 15px;
 }

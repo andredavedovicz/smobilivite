@@ -9,7 +9,8 @@ function App() {
     <div className="App">
       <div className="container">
         <img src={SMOBILI} alt="SMOBILI" />
-        <p>Login</p>
+        <p className="sistema">SISTEMA DE MANUTENÇÃO</p>
+        <p className="login">Login</p>
         <TextField id="outlined-basic" label="email" variant="outlined" sx={{width:175,height:175}} />
         <TextField id="outlined-basic" label="senha" variant="outlined" sx={{width:175,height:175}} />
         
