@@ -52,6 +52,7 @@
     align-items: center;
     border:2px solid #252526;
     margin-bottom: 150px;
+    background-color: #4C4D54;
   }
   .lineUser button,.lineAdm button{
     background-color: #4C4D54;
@@ -85,4 +86,7 @@
   }
   .icons img{
     height: 100%;
+  }
+  .css-5vsnzl-MuiButtonBase-root-MuiButton-root{
+    background-color: #4C4D54;
   }

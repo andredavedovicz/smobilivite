@@ -9,6 +9,8 @@ import { IoMdOptions } from "react-icons/io";
 import { FiAlertTriangle } from "react-icons/fi";
 import { TbCalendarStats } from "react-icons/tb";
 
+import Stack from '@mui/material/Stack';
+
 function User() {
   return (
     <div className="App1">
@@ -36,14 +38,17 @@ function User() {
         <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
           Descrição da Manutenção
         </Button>
+        
       </div>
       <div className="lineUser">
         <div className="icons">
           <AiFillCamera size="5rem" />
         </div>
-        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
-          Registro Fotográfico
+        <Button variant="contained" component="label" className="category" sx={{textTransform: 'none',background:'#4C4D54'}}>
+        Registro Fotográfico
+        <input hidden accept="image/*" multiple type="file" />
         </Button>
+        
       </div>
       <div className="lineUser">
         <div className="icons">
