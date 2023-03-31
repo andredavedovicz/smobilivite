@@ -16,7 +16,7 @@
     
   }
 
-.central{
+.centralUser{
     height: 9%;
     width: 100%;
     background-color: #A1A2A6;
@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
   }
-  .line{
+  .lineUser{
     height: 13%;
     width: 100%;
     display: flex;
@@ -51,7 +51,7 @@
     border:2px solid #252526;
     margin-bottom: 150px;
   }
-  .line button{
+  .lineUser button,.lineAdm button{
     background-color: #4C4D54;
   }
   .whatis{
@@ -60,5 +60,25 @@
   }
   .urgency{
     width: 37.5%;
+    height: 100%;
+  }
+  .lineAdm{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  .centralAdm{
+    height: 10%;
+    width: 100%;
+    background-color: #A1A2A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons img{
     height: 100%;
   }

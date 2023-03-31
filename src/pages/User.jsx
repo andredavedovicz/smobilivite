@@ -11,71 +11,71 @@ import { TbCalendarStats } from "react-icons/tb";
 function User() {
   return (
     <div className="App1">
-      <div className="central">CENTRAL DE COMUNICAÇÃO DE MANUTENÇÃO</div>
-      <div className="line">
+      <div className="centralUser">CENTRAL DE COMUNICAÇÃO DE MANUTENÇÃO</div>
+      <div className="lineUser">
         <div className="icons">
           <BsFillPersonFill size="5rem" />
         </div>
-        <Button variant="contained" className="category">
+        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
           Dona Maria
         </Button>
       </div>
-      <div className="line">
+      <div className="lineUser">
         <div className="icons">
           <BsFillHouseFill size="5rem" />
         </div>
-        <Button variant="contained" className="category">
+        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
           Recepção
         </Button>
       </div>
-      <div className="line">
+      <div className="lineUser">
         <div className="icons">
           <HiChatBubbleLeftRight size="5rem" />
         </div>
-        <Button variant="contained" className="category">
+        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
           Descrição da Manutenção
         </Button>
       </div>
-      <div className="line">
+      <div className="lineUser">
         <div className="icons">
           <AiFillCamera size="5rem" />
         </div>
-        <Button variant="contained" className="category">
+        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
           Registro Fotográfico
         </Button>
       </div>
-      <div className="line">
+      <div className="lineUser">
         <div className="icons">
           <IoMdOptions size="5rem" />
         </div>
         
-          <Button variant="contained" className="whatis">
+          <Button variant="contained" className="whatis" sx={{textTransform: 'none'}}>
             Manutenção
           </Button>
-          <Button variant="contained" className="whatis">
+          <Button variant="contained" className="whatis" sx={{textTransform: 'none'}}>
             Melhoria
           </Button>
-          <Button variant="contained" className="whatis">
+          <Button variant="contained" className="whatis" sx={{textTransform: 'none'}}>
             Investimento
           </Button>
         
       </div>
-      <div className="line">
+      <div className="lineUser">
         <div className="icons">
           <FiAlertTriangle size="5rem" />
         </div>
-        <Button variant="contained" className="urgency">
+        <Button variant="contained" className="urgency" sx={{textTransform: 'none'}}>
           Área em atividade
         </Button>
-        <Button variant="contained" className="urgency">
+        <Button variant="contained" className="urgency" sx={{textTransform: 'none'}}>
          Paralisada
         </Button>
       </div>
-      <div className="line">
+      <div className="lineUser">
         <div className="icons">
           <TbCalendarStats size="5rem" />
         </div>
-        <Button variant="contained" className="category">
+        <Button variant="contained" className="category" sx={{textTransform: 'none'}}>
           Minhas OS's
         </Button>
       </div>
@@ -83,4 +83,3 @@ function User() {
   );
 }
 export default User;
-BsFillPersonFill;
