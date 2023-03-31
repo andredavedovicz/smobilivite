@@ -13,7 +13,7 @@ import MappleBear from '../img/mapplebear.png'
 function User() {
   return (
     <div className="App1">
-      <div className="centralAdm">CENTRAL DE COMUNICAÇÃO DE MANUTENÇÃO</div>
+      <div className="centralAdm">CENTRAL DE COMUNICAÇÃO DE MANUTENÇÃO-ADM</div>
       <div className="lineAdm">
         <div className="icons">
          <img src={MappleBear} alt="MappleBear"/>
