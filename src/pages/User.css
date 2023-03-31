@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Roboto',sans-serif;
     
   }
   .App1 {
@@ -89,4 +89,8 @@
   }
   .css-5vsnzl-MuiButtonBase-root-MuiButton-root{
     background-color: #4C4D54;
+  }
+  Button{
+    background-color:#4C4D54;
+    text-transform: none;
   }
