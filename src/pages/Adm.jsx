@@ -13,15 +13,17 @@ import MappleBear from "../img/mapplebear.png";
 
 import ButtonSelector from "../components/button/buttonSelector";
 function User() {
-  const optionAdm = ["Aldo Maia", "Caio"];
+  const optionAdm = ["Usuário","Aldo Maia", "Caio"];
   const optionOS = ["OS001", "OS002", "OS003", "OS004", "OS005", "OS006"];
   const optionSchedule = [
+    "Agendar o Serviço",
     "6:00 - 8:00(Durante semana)",
     "19:00 - 22:00(Durante semana)",
     "Fim de semana(Sábado)",
     "Fim de semana(Domingo)",
   ];
   const optionOperator = [
+    "Prestador do Serviço",
     "Carlos (Marcenaria)",
     "Roberto (Pedreiro)",
     "Adalberto (Serralheiro)",
@@ -37,14 +39,14 @@ function User() {
         <Button
           variant="contained"
           className="category"
-          sx={{ textTransform: "none" }}
+          sx={{ textTransform: "none",justifyContent:"flex-start",border:"none",boxShadow:"none" }}
         >
           MappleBear
         </Button>
       </div>
       <div className="lineAdm">
         <div className="icons">
-          <BsFillPersonFill size="5rem" />
+          <BsFillPersonFill size="3.5rem" />
         </div>
 
         <ButtonSelector style="border-color:#4C4D54" options={optionAdm}>
@@ -54,7 +56,7 @@ function User() {
 
       <div className="lineAdm">
         <div className="icons">
-          <TbCalendarStats size="5rem" />
+          <TbCalendarStats size="3.5rem" />
         </div>
         <ButtonSelector style="border-color:#4C4D54" options={optionOS}>
           Usuário
@@ -63,13 +65,14 @@ function User() {
 
       <div className="lineAdm">
         <div className="icons">
-          <HiChatBubbleLeftRight size="5rem" />
+          <HiChatBubbleLeftRight size="3.5rem" />
         </div>
         <Button
           variant="contained"
           component="label"
           className="category"
-          sx={{ textTransform: "none", background: "#4C4D54" }}
+          sx={{ textTransform: "none", background: "#4C4D54",justifyContent:"flex-start",border:"none",boxShadow:"none",
+          fontSize:"17px" }}
         >
           Descrição da Manutenção
           <input hidden accept="audio/*" multiple type="file" />
@@ -77,14 +80,15 @@ function User() {
       </div>
       <div className="lineAdm">
         <div className="icons">
-          <AiFillCamera size="5rem" />
+          <AiFillCamera size="3.5rem" />
         </div>
 
         <Button
           variant="contained"
           component="label"
           className="category"
-          sx={{ textTransform: "none", background: "#4C4D54" }}
+          sx={{ textTransform: "none", background: "#4C4D54",justifyContent:"flex-start",border:"none",boxShadow:"none",
+          fontSize:"17px" }}
         >
           Registro Fotográfico
           <input hidden accept="image/*" multiple type="file" />
@@ -92,26 +96,26 @@ function User() {
       </div>
       <div className="lineAdm">
         <div className="icons">
-          <FiAlertTriangle size="5rem" />
+          <FiAlertTriangle size="3.5rem" />
         </div>
         <Button
           variant="contained"
           className="urgency"
           sx={{ textTransform: "none" }}
         >
-          Área em atividade
+          Área<br/>Ativa
         </Button>
         <Button
           variant="contained"
           className="urgency"
           sx={{ textTransform: "none" }}
         >
-          Paralisada
+          Área<br/>Paralisada
         </Button>
       </div>
       <div className="lineAdm">
         <div className="icons">
-          <AiOutlineClockCircle size="5rem" />
+          <AiOutlineClockCircle size="3.5rem" />
         </div>
         <ButtonSelector style="border-color:#4C4D54" options={optionSchedule}>
           Agendar
@@ -119,7 +123,7 @@ function User() {
       </div>
       <div className="lineAdm">
         <div className="icons">
-          <MdManageAccounts size="5rem" />
+          <MdManageAccounts size="3.5rem" />
         </div>
         <ButtonSelector style="border-color:#4C4D54" options={optionOperator}>
           Operador
@@ -127,7 +131,7 @@ function User() {
       </div>
       <div className="lineAdm">
         <div className="icons">
-          <AiOutlineCheckCircle size="5rem" />
+          <AiOutlineCheckCircle size="3.5rem" />
         </div>
         <Button
           variant="contained"

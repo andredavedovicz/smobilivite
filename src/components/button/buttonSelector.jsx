@@ -10,11 +10,10 @@ import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 
 //sx={{ textTransform: "none", background: "#4C4D54",borderColor:"#4C4D54"  }}
-export default function ButtonSelector({options}) {
-  
+export default function ButtonSelector({ options }) {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(1);
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   const handleClick = () => {
     console.info(`You clicked ${options[selectedIndex]}`);
@@ -62,6 +61,8 @@ export default function ButtonSelector({options}) {
             textTransform: "none",
             background: "#4C4D54",
             borderColor: "#4C4D54",
+            justifyContent:"flex-start",
+            fontSize:"17px"
           }}
         >
           {options[selectedIndex]}{" "}
@@ -86,7 +87,7 @@ export default function ButtonSelector({options}) {
               textTransform: "none",
               backgroundColor: "transparent",
               borderColor: "transparent",
-              color:"white"
+              color: "white",
             }}
           />
         </Button>
@@ -111,7 +112,11 @@ export default function ButtonSelector({options}) {
           >
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
-                <MenuList id="split-button-menu" autoFocusItem sx={{width:"275px"}}>
+                <MenuList
+                  id="split-button-menu"
+                  autoFocusItem
+                  sx={{ width: "275px" }}
+                >
                   {options.map((option, index) => (
                     <MenuItem
                       key={option}

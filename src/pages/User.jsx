@@ -9,9 +9,11 @@ import { IoMdOptions } from "react-icons/io";
 import { FiAlertTriangle } from "react-icons/fi";
 import { TbCalendarStats } from "react-icons/tb";
 import ButtonSelector from "../components/button/buttonSelector";
+import { Box } from "@mui/material";
 
 function User() {
   const optionUser = [
+    "Usuário",
     "Dona Maria",
     "Professor1",
     "Matheus",
@@ -20,6 +22,7 @@ function User() {
     "Diretoria",
   ];
   const optionLocations = [
+    "Local",
     "Cozinha",
     "Banheiro",
     "Playground",
@@ -34,28 +37,33 @@ function User() {
       <div className="centralUser">CENTRAL DE COMUNICAÇÃO DE MANUTENÇÃO</div>
       <div className="lineUser">
         <div className="icons">
-          <BsFillPersonFill size="5rem" />
+          <BsFillPersonFill size="3.5rem" />
         </div>
 
         <ButtonSelector style="border-color:#4C4D54" options={optionUser}>
-          Usuário
+          
         </ButtonSelector>
       </div>
       <div className="lineUser">
         <div className="icons">
-          <TbCalendarStats size="5rem" />
+          <TbCalendarStats size="3.5rem" />
         </div>
         <Button
           variant="contained"
           className="category"
-          sx={{ textTransform: "none" }}
+          sx={{
+            textTransform: "none",
+            justifyContent: "flex-start",
+            border: "none",
+            boxShadow: "none",
+          }}
         >
           Minhas OS's
         </Button>
       </div>
       <div className="lineUser">
         <div className="icons">
-          <BsFillHouseFill size="5rem" />
+          <BsFillHouseFill size="3.5rem" />
         </div>
         <ButtonSelector style="border-color:#4C4D54" options={optionLocations}>
           Local
@@ -63,35 +71,50 @@ function User() {
       </div>
       <div className="lineUser">
         <div className="icons">
-          <HiChatBubbleLeftRight size="5rem" />
+          <HiChatBubbleLeftRight size="3.5rem" />
         </div>
         <Button
           variant="contained"
           component="label"
           className="category"
-          sx={{ textTransform: "none", background: "#4C4D54" }}
+          sx={{
+            textTransform: "none",
+            background: "#4C4D54",
+            justifyContent: "flex-start",
+            border: "none",
+            boxShadow: "none",
+            fontSize: "17px",
+          }}
         >
-          Descrição da Manutenção
+          Fale,o que aconteceu? <Box sx={{ width: "25%" }} />
           <input hidden accept="audio/*" multiple type="file" />
         </Button>
       </div>
       <div className="lineUser">
         <div className="icons">
-          <AiFillCamera size="5rem" />
+          <AiFillCamera size="3.5rem" />
         </div>
         <Button
           variant="contained"
           component="label"
           className="category"
-          sx={{ textTransform: "none", background: "#4C4D54" }}
+          sx={{
+            textTransform: "none",
+            background: "#4C4D54",
+            justifyContent: "flex-start",
+            border: "none",
+            boxShadow: "none",
+            fontSize: "17px",
+          }}
         >
           Registro Fotográfico
+          <Box sx={{ width: "25%" }} />
           <input hidden accept="image/*" multiple type="file" />
         </Button>
       </div>
       <div className="lineUser">
         <div className="icons">
-          <IoMdOptions size="5rem" />
+          <IoMdOptions size="3.5rem" />
         </div>
 
         <Button
@@ -118,7 +141,7 @@ function User() {
       </div>
       <div className="lineUser">
         <div className="icons">
-          <FiAlertTriangle size="5rem" />
+          <FiAlertTriangle size="3.5rem" />
         </div>
         <Button
           variant="contained"
