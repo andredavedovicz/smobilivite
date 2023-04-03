@@ -86,7 +86,7 @@ function User() {
             fontSize: "17px",
           }}
         >
-          Fale,o que aconteceu? <Box sx={{ width: "25%" }} />
+          Descrever um serviço ou fornecimento <Box sx={{ width: "25%" }} />
           <input hidden accept="audio/*" multiple type="file" />
         </Button>
       </div>
