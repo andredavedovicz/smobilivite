@@ -148,14 +148,14 @@ function User() {
           className="urgency"
           sx={{ textTransform: "none" }}
         >
-          Área em atividade
+          Área<br/> ativa
         </Button>
         <Button
           variant="contained"
           className="urgency"
           sx={{ textTransform: "none" }}
         >
-          Paralisada
+          Área<br/> Paralisada
         </Button>
       </div>
     </div>
